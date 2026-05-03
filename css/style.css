@@ -1,2 +1,146 @@
 /* hompepage style */
 
+:root {
+  --green: #d1e4c8;
+  --gray: #cecdc8;
+  --black: #333333;
+  --white: #f8f4ee;
+}
+
+/*Body*/
+
+body {
+  font-family: Avenir, sans-serif;
+  background: var(--white);
+  color: var(--black);
+}
+
+/*Navbar*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+nav a {
+  margin: 0 20px;
+  color: var(--black);
+  font-size: 14px;
+}
+
+/*Main*/
+main {
+  text-align: center;
+  padding: 60px 20px;
+  letter-spacing: 1px;
+}
+
+/*Cart Item*/
+.cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.product-image img {
+  width: 260px;
+  border-radius: 20px;
+}
+
+.product-info {
+  text-align: left;
+}
+
+.product-info h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/*Quantity*/
+.quantity-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quantity-buttons button {
+  background-color: var(--green);
+  border: none;
+  padding: 6px 12px;
+  margin: 0 4 px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/*Total*/
+.cart-total {
+  margin: 40px 0;
+}
+
+.cart-total h2 {
+  font-size: 24px;
+}
+
+.cart-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/*Buttons*/
+.cart-actions {
+  margin: 20px;
+}
+
+.cart-actions button {
+  background-color: var(--green);
+  border: none;
+  padding: 16px 30px;
+  margin: 10px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--green);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-top: 80px;
+}
+
+.footer-links p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.footer-logo {
+  max-width: 12px;
+  height: auto;
+}
+
+/*Responsive*/
+@media (max-width: 768) {
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
