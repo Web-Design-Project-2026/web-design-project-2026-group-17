@@ -1,4 +1,15 @@
-/* hompepage style */
+/*text style*/
+* {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
   --green: #d1e4c8;
@@ -6,6 +17,48 @@
   --black: #333333;
   --white: #f8f4ee;
 }
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  background-color: var(--white);
+  padding: 2rem 5rem;
+}
+
+.site-nav {
+  width: 100%;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav-left {
+  margin-right: auto;
+}
+.logo {
+  width: 11rem;
+  height: auto;
+  display: block;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-right a {
+  font-size: 0.9rem;
+}
+
+/* .shopping-cart {
+  width: 1,4rem;
+  height: auto;
+  display: block;
+} */
+
 
 html,
 body {
@@ -42,7 +95,13 @@ main {
   letter-spacing: 1px;
   flex: 1;
 }
-
+.shopping-cart {
+  width: 2.5rem;
+  max-width: 2.5rem;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 /*Cart Item*/
 .cart-item {
   display: flex;
@@ -118,6 +177,7 @@ main {
 
 /*Footer*/
 footer {
+  width: 100%;
   background-color: var(--green);
   display: flex;
   justify-content: space-between;
