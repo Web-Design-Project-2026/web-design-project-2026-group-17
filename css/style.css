@@ -59,12 +59,18 @@ width: 100%;
   --white: #f8f4ee;
 }
 
-/*Body*/
+html,
+body {
+  height: 100%;
+}
 
+/*Body*/
 body {
   font-family: Avenir, sans-serif;
   background: var(--white);
   color: var(--black);
+  display: flex;
+  flex-direction: column;
 }
 
 /*Navbar*/
@@ -86,6 +92,7 @@ main {
   text-align: center;
   padding: 60px 20px;
   letter-spacing: 1px;
+  flex: 1;
 }
 
 /*Cart Item*/
@@ -176,9 +183,23 @@ footer {
   margin: 6px 0;
 }
 
-.footer-logo {
-  max-width: 12px;
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 14rem;
   height: auto;
+  margin-bottom: 0.6rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: auto;
+  font-size: 0.85rem;
+  color: var(--black);
 }
 
 /*Responsive*/
