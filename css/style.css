@@ -203,8 +203,8 @@ footer {
 }
 
 .footer-links p {
-  font-size: 14px;
-  margin: 6px 0;
+  font-size: 8px;
+  margin: 0.25rem 0;
 }
 
 .footer-links ul {
@@ -215,6 +215,12 @@ footer {
 
 .footer-links a {
   font-size: 0.75rem;
+  line-height: 1.2;
+  display: block;
+}
+
+.footer-links li {
+  margin: 0rem;
 }
 
 .footer-right {
