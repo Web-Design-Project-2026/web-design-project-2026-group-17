@@ -69,3 +69,21 @@ function removeItem(index) {
     displayCart();
     updateCartCount();
 }
+
+
+//slider
+const slider = document.getElementById("slider");
+
+document.querySelector(".next").addEventListener("click", () => {
+    slider.scrollBy({
+        left: 300,
+        behavior: "smooth"
+    });
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+    slider.scrollBy({
+        left:300,
+        behavior: "smooth"
+    });
+});
