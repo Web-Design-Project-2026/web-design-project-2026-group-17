@@ -12,7 +12,7 @@
 
   </head>
 <body>
-
+<div class="page-wrapper">
     <header>
       <nav class="site-nav">
         <ul class="nav-list">
@@ -23,32 +23,27 @@
           </li>
       <nav>
         <ul class="nav-right">
-          <a href="productpage.html">Products</a>
-          <a href="#"> About us</a>
-          <a href="#"> Customer service</a>
-          <a href="#">
+          <li><a href="productpage.html">Products</a></li>
+          <li><a href="#"> About us</a></li>
+          <li><a href="#"> Customer service</a></li>
+          <li><a href="#">
             <img class="shopping-cart" src="images/shopping-cart-icon.png.webp" alt=" shopping cart" />
           </a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main class="container product-page">
         <section class="product-details">
+          <div class="thumnails-column">
+
+          <img src="Images/blush-mockup-med-vc.png" onclick="changeImage(this)" class="thumnails" >
+          <img src="Images/blushswatch.png" onclick="changeImage(this)" class="thumnails" >
+          <img src="Images/blush- step-six .jpg" onclick="changeImage(this)" class="thumnails" >
+        </div>
             <div class="product-image">
-                <img id="mainImage" src="Images/blush-mockup-med-vc.png" alt="Bloom Blush Duo" class="main-product-img">
-            
-                <div class="thumnails">
-                    <img src="Images/blush-mockup-med-vc.png" onclick="changeImage(this)"/>
-                </div>
-
-                <div class="thumnails">
-                    <img src="Images/blushswatch.png" onclick="changeImage(this)"/>
-                </div>
-
-                <div class="thumnails">
-                    <img src="Images/blush- step-six .jpg" onclick="changeImage(this)"/>
-                </div>                
+                <img id="mainImage" src="Images/blush-mockup-med-vc.png" alt="Bloom Blush Duo" class="main-product-img">              
 
             </div>
 
@@ -135,6 +130,6 @@
         </div>
         <div class="footer-bottom">© Velouré Cosmetics 2026</div>
 
-
+</div>
 </body>
 </html>
