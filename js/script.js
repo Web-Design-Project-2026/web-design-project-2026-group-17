@@ -87,3 +87,8 @@ document.querySelector(".prev").addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+function changeImage(img) {
+    const mainImage = document.getElementById("mainImage");
+    mainImage.src = img.src;
+ }
