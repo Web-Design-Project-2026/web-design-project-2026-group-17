@@ -160,7 +160,6 @@ img {
   font-weight: 700;
 }
 
-
 /* makeup guide */
 
 .makeup-guide {
@@ -216,7 +215,7 @@ img {
 
 /*Blush product site*/
 .product-container {
-  width: min(80rem,90%);
+  width: min(80rem, 90%);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -553,17 +552,12 @@ footer {
   color: var(--black);
 }
 
-
-
 /* Product page */
 
 h2 {
   margin: 0.8rem 0 0.2rem;
   font-size: 1rem;
-  
 }
-
-
 
 /*product categories*/
 
@@ -571,18 +565,18 @@ h2 {
   width: min(80rem, 90%);
   margin: 3rem auto 4rem;
   display: flex;
-  justify-content: flex-start ;
-  align-items: center ;
+  justify-content: flex-start;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-.product-categories{
+.product-categories {
   width: min(80rem, 88%);
 }
 
 .category-btn {
-  background-color: #D1E4C8;
+  background-color: #d1e4c8;
   color: black;
   padding: 0.8rem 2rem;
   border-radius: 999px;
@@ -591,15 +585,83 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.02em;
   display: inline-block;
-
 }
 
 .category-btn:hover,
 .category-btn.active {
-  background-color: #D1E4C8;
+  background-color: #d1e4c8;
 }
 
+/* About us page */
 
+.about-page {
+  width: min(80rem, 90%);
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  text-align: left;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.value-card {
+  background-color: var(--green);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: left;
+}
+
+.value-card h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 900px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h1 {
+    font-size: 2.2rem;
+  }
+}
 
 /*Responsive*/
 @media screen and (max-width: 900px) {
@@ -621,7 +683,7 @@ h2 {
   .product-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .product-details{
+  .product-details {
     grid-template-columns: 1fr;
     width: min(80rem, 90%);
   }
@@ -676,10 +738,9 @@ h2 {
   .product-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .guide-grid {
     grid-template-columns: 1fr;
-
   }
   .product-container {
     grid-template-columns: 1fr;
@@ -696,7 +757,7 @@ h2 {
   .price {
     font-size: 1rem;
   }
-  .product-info ul{
+  .product-info ul {
     font-size: 1rem;
   }
   .product-info button {
