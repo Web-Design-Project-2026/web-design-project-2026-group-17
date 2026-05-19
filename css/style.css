@@ -131,7 +131,7 @@ img {
 
 .popular-products h2 {
   margin: 2rem 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
@@ -151,7 +151,7 @@ img {
 
 .product-card h3 {
   margin: 0.8rem 0 0.2rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 
@@ -171,7 +171,7 @@ img {
 
 .makeup-guide h2 {
   margin: 4rem 0 2rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
@@ -250,7 +250,7 @@ img {
 }
 
 .product-info h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
