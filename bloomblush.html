@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="js/script.js" defer></script>
     <title>Bloom Blush Duo</title>
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css"/>
@@ -26,10 +27,12 @@
           <li><a href="productpage.html">Products</a></li>
           <li><a href="aboutus.html"> About us</a></li>
           <li><a href="#"> Customer service</a></li>
-          <li><a href="cart.html">
-            <img class="shopping-cart" src=images/shopping-cart-icon.png.webp" alt=" shopping cart" />
-          </a>
-          </li>
+<li class="cart-icon">
+  <a href="cart.html">
+    <img class="shopping-cart" src="images/shopping-cart-icon.png.webp" alt="shopping cart" />
+    <span id="cart-count">0</span>
+  </a>
+</li>
         </ul>
       </nav>
     </header>
@@ -63,9 +66,9 @@
                 </ul>
                 </div>
 <!--button adding the product to the shopping cart-->
-        <button onclick="addToCart('Bloom Blush Duo', 129, 'images/blush-mockup-med-vc.png')">
-            Add to Cart
-        </button>
+<button onclick="addToCart('Bloom Blush Duo', 249, 'images/blush-mockup-med-vc.png')">
+  Add to Cart
+</button>
          </div>
         </section>
 

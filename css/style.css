@@ -405,6 +405,22 @@ main {
   display: inline-block;
 }
 
+.quantity-section button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--green);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.quantity-section button:hover {
+  background-color: var(--black);
+  color: white;
+}
+
 /*Thumbnails in the product page*/
 .thumbnails {
   display: flex;
@@ -453,7 +469,6 @@ main {
   color: #d1e4c8;
   transform: translateY(-px);
 }
-
 
 .related-products h2 {
   font-size: 1.8rem;
@@ -603,7 +618,7 @@ h2 {
   color: black;
   padding: 0.8rem 2rem;
   border-radius: 999px;
-  font-size: 1rem ;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.02em;

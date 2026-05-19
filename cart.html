@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script src="js/script.js" defer></script>
     <title>Cart</title>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -12,22 +13,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-  <header>
+    <header>
       <nav class="site-nav">
         <ul class="nav-list">
           <li class="nav-left">
             <a href="index.html">
-              <img class="logo" src="images/big-logo-black.png" alt="logo" />
+              <img class="logo" src="Images/big-logo-black.png" alt="logo" />
             </a>
           </li>
       <nav>
         <ul class="nav-right">
-          <a href="productpage.html">Products</a>
-          <a href="aboutus.html"> About us</a>
-          <a href="#"> Customer service</a>
-          <a href="cart.html">
-            <img class="shopping-cart" src="images/shopping-cart-icon.png.webp" alt=" shopping cart" />
-          </a>
+          <li><a href="productpage.html">Products</a></li>
+          <li><a href="aboutus.html"> About us</a></li>
+          <li><a href="#"> Customer service</a></li>
+<li class="cart-icon">
+  <a href="cart.html">
+    <img class="shopping-cart" src="Images/shopping-cart-icon.png.webp" alt="shopping cart" />
+    <span id="cart-count">0</span>
+  </a>
+</li>
         </ul>
       </nav>
     </header>
@@ -35,10 +39,10 @@
     <main class="container cart-page">
       <h1 class="cart-title">YOUR SHOPPING CART</h1>
       <p>Add items from the Products page to see them here</p>
-      <div id="cart-item"></div>
+      <div id="cartItems"></div>
 
       <div class="cart-total">
-        <h2>Total: <span id="cartTotal">0</span> SEK</h2>
+        <h2>Total: <span id="cartTotal">0 SEK</span></h2>
 
         <div class="cart-btns">
           <a href="productpage.html" class="continue-shopping-btn">Continue Shopping</a>
