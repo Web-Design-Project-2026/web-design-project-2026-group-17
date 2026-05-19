@@ -557,6 +557,10 @@ footer {
 
 /* Product page */
 
+h2 {
+  font-size: 0.8rem;
+}
+
 /*product categories*/
 
 .product-categories {
