@@ -151,13 +151,13 @@ img {
 
 .product-card h3 {
   margin: 0.8rem 0 0.2rem;
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 1rem;
 }
 
 .product-card p {
   margin: 0;
   font-size: 0.8rem;
+  font-weight: 700;
 }
 
 
